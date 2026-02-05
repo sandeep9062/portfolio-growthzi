@@ -1,0 +1,111 @@
+.portfolio-about-container {
+  background-color: #0a0a0a;
+}
+
+.portfolio-about-section {
+  background-color: #0a0a0a;
+ 
+  padding: 80px 80px; padding-bottom: 0;
+  color: #ffffff;
+}
+
+.portfolio-about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Exact split like the screenshot */
+  gap: 40px;
+  margin-bottom: 80px;
+}
+.portfolio-capabilities-section {
+  margin-bottom: 0;
+  padding: 0;
+}
+.portfolio-section-heading {
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 1;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.portfolio-about-lead-text {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.portfolio-about-description,
+.portfolio-capabilities-description {
+  color: #a3a3a3;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.portfolio-about-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.portfolio-download-pill {
+  background-color: #D3E97A; /* Lime Green */
+  color: #000000;
+  border: none;
+  padding: 18px 32px;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.portfolio-pill-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+.portfolio-social-circles {
+  display: flex;
+  gap: 12px;
+}
+
+.portfolio-circle-link {
+  width: 48px;
+  height: 48px;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   color: #D3E97A;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.portfolio-section-divider {
+  height: 1px;
+  background-color: #333333;
+  width: 100%;
+  margin: 80px 0 0;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .portfolio-about-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .portfolio-section-heading {
+    font-size: 48px;
+  }
+  .portfolio-about-section {
+    padding: 60px 40px;
+  }
+}

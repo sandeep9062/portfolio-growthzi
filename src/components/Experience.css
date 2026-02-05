@@ -1,0 +1,103 @@
+.portfolio-exp-section {
+  background-color: #0a0a0a;
+  padding: 80px 80px;
+  color: #ffffff;
+}
+
+/* Skills Tags Styling */
+.portfolio-skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end; /* Aligns tags to the right side as per screenshot */
+  margin-bottom: 100px;
+  max-width: 1200px;
+  margin-left: auto;
+}
+
+.portfolio-skill-tag {
+  border: 1px solid #333;
+  padding: 12px 28px;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: border-color 0.3s ease;
+}
+
+.portfolio-skill-tag:hover {
+  border-color: #D3E97A; /* Subtle lime highlight on hover */
+}
+
+/* Experience Grid Styling */
+.portfolio-exp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.portfolio-exp-heading {
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.portfolio-job-entry {
+  margin-bottom: 60px;
+}
+
+.portfolio-job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+
+.portfolio-job-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.portfolio-job-date {
+  color: #a3a3a3;
+  font-size: 16px;
+}
+
+.portfolio-job-company {
+  color: #D3E97A; /* Using the lime accent for the company name */
+  font-size: 18px;
+  font-weight: 600;
+  margin: 8px 0 16px 0;
+}
+
+.portfolio-job-desc {
+  color: #a3a3a3;
+  line-height: 1.6;
+  font-size: 18px;
+  max-width: 550px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .portfolio-exp-section {
+    padding: 60px 40px;
+  }
+  .portfolio-exp-grid {
+    grid-template-columns: 1fr;
+  }
+  .portfolio-exp-heading {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+  .portfolio-job-header {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .portfolio-skills-container {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,115 @@
+.portfolio-contact-footer {
+  background-color: #0a0a0a;
+  padding: 80px 80px 40px 80px;
+  color: #ffffff;
+}
+
+.portfolio-contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-bottom: 100px;
+}
+
+/* Left Content */
+.portfolio-contact-heading {
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.portfolio-contact-sub {
+  font-size: 18px;
+  color: #a3a3a3;
+  margin-bottom: 10px;
+}
+
+.portfolio-email-link, .portfolio-resume-link {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1.5px solid #D3E97A;
+  padding-bottom: 2px;
+}
+
+.portfolio-social-icon-row {
+  display: flex;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.portfolio-social-glyph {
+  color: #D3E97A; /* Exact lime green color */
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Form Styling */
+.portfolio-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.portfolio-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.portfolio-input-group label {
+  color: #a3a3a3;
+  font-size: 14px;
+}
+
+.portfolio-input-group input, 
+.portfolio-input-group textarea {
+  background-color: #1a1a1a;
+  border: none;
+  padding: 15px;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.portfolio-input-group input:focus, 
+.portfolio-input-group textarea:focus {
+  outline: 1px solid #D3E97A;
+}
+
+.portfolio-submit-btn {
+  background-color: #D3E97A;
+  color: #000;
+  border: none;
+  padding: 18px 40px;
+  border-radius: 100px;
+  font-weight: 800;
+  width: fit-content;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Footer Bottom */
+.portfolio-copyright {
+  font-size: 14px;
+  color: #a3a3a3;
+  padding-top: 40px;
+}
+
+/* Tablet & Mobile Adjustments */
+@media (max-width: 1024px) {
+  .portfolio-contact-footer {
+    padding: 60px 40px 40px 40px;
+  }
+  .portfolio-contact-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  .portfolio-contact-heading {
+    font-size: 54px;
+  }
+}
